@@ -10,6 +10,6 @@ public class GAS_PracticeEditorTarget : TargetRules
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
-		ExtraModuleNames.Add("GAS_Practice");
-	}
+        ExtraModuleNames.AddRange(new string[] { "GAS_Practice", "GAS_Module" });
+    }
 }

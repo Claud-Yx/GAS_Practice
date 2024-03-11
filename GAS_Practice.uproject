@@ -7,7 +7,20 @@
 		{
 			"Name": "GAS_Practice",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		},
+		{
+			"Name": "GAS_Module",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"GAS_Practice",
+				"Engine",
+				"GameplayAbilities"
+			]
 		}
 	],
 	"Plugins": [
